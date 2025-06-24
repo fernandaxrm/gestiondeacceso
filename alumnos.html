@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Control De Acceso de Alumno</title>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFB6C1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #808080;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #808080;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="date"],
+input[type="time"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"], input[type="button"] { /* Estilos para ambos botones */
+  background-color: #808080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Control De Acceso de Alumno</h1>
+  <form>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="numeroControl">Número de Control:</label>
+    <input type="number" id="numeroControl" name="numeroControl" required>
+
+    <label for="grupo">Grupo:</label>
+    <input type="text" id="grupo" name="grupo" required>
+
+    <label for="asunto">Asunto:</label>
+    <select id="asunto" name="asunto" required>
+      <option value="servicio">Servicio Social</option>
+      <option value="externo">Externo</option>
+      <option value="tramites">Trámites</option>
+    </select>
+
+    <label for="motivo">Motivo:</label>
+    <textarea id="motivo" name="motivo" rows="4"></textarea>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="horaEntrada">Hora de Entrada:</label>
+    <input type="time" id="horaEntrada" name="horaEntrada" required>
+
+    <label for="horaSalida">Hora de Salida:</label>
+    <input type="time" id="horaSalida" name="horaSalida">
+
+    <input type="submit" value="Enviar">
+    <input type="button" value="Regresar al Menú" onclick="window.location.href='index.html';">
+  </form>
+</div>
+</body>
+</html>

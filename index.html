@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Sistema de Gestion de Accesos - CECyTEM Coacalco</title>
+<style>
+body {
+  background-color: #FFB6C1;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("fondo.jpg"); 
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 500px; 
+  max-width: 80%;
+}
+
+h1 {
+  color: #808080;
+  margin-bottom: 20px;
+  font-size: 2em; 
+}
+
+h2 { 
+  color: #808080;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #808080;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+}
+
+button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>CECyTEM Coacalco</h1>
+    <h2>Sistema de Gestion de Accesos</h2>
+    <div class="buttons">
+      <a href="tutor.html"><button>Tutores</button></a>
+      <a href="visitantes.html"><button>Visitantes</button></a>
+      <a href="alumnos.html"><button>Alumnos</button></a>
+      <a href="horario.html"><button>Horario</button></a>
+    </div>
+  </div>
+</body>
+</html>

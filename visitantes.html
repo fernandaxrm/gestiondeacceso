@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Control de Acceso de Visitante</title>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFB6C1; /* Pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 500px; /* Adjust width as needed */
+  text-align: center;
+}
+
+h1 {
+  color: #808080; /* Gray heading */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #808080; /* Gray labels */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"], input[type="button"] { /* Estilos para ambos botones */
+  background-color: #808080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Control de Acceso de Visitante</h1>
+  <form>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="procedencia">Procedencia:</label>
+    <input type="text" id="procedencia" name="procedencia" required>
+
+    <label for="area">Área que visita:</label>
+    <input type="text" id="area" name="area" required>
+
+    <label for="persona">Persona que visita:</label>
+    <input type="text" id="persona" name="persona" required>
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="identificacion">Identificación:</label>
+    <input type="text" id="identificacion" name="identificacion">
+
+    <label for="hora_entrada">Hora Entrada:</label>
+    <input type="time" id="hora_entrada" name="hora_entrada" required>
+
+    <label for="hora_salida">Hora Salida:</label>
+    <input type="time" id="hora_salida" name="hora_salida">
+
+    <br><br>
+    <input type="submit" value="Enviar">
+    <input type="button" value="Regresar al Menú" onclick="window.location.href='index.html';">
+  </form>
+</div>
+</body>
+</html>
